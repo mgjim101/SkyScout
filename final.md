@@ -1,0 +1,31 @@
+### General Development
+1. Our team built a weather app . Its features are complete and running. The weather app has a login/sign up feature that includes email verification if they are signing up. The weather app displays 5 day weather forecast data, along with today's weather data. The user can either search up cities or click on the gps icon to automatically display the weather of the user's current location. The weather app can also display the metric or the imperial system data. Users can also "share dashboard" which produces a pdf of their dashboard which can then be shared to their friends via email or any communication platform.
+2.  Checklist
+- [x]  current weather data
+- [x] weather data of any city
+- [x] 5 day forecast
+- [x] hourly forecast
+- [ ] favorite locations
+- [x] share dashboard
+- [x] sign in/sign out
+- [x] register
+The feature of saving locations is missing. Our initial requirements did capture the details needed for the project.
+3. The system is built using a client-server architecture, using a three-tier design to separate concerns and ensure scalability, maintainability and reusability. The key components are the Front-End, Back-End, Database, Third-Party Integrations and Infrastructures. The Front-End is built with React.js and has a responsive and interactive UI. It has user authentication and authorization , dashboard customization, sharing interface and weather data visualization. The Back-End was built using node.js and takes care of user authentication, token management, and APIs. The Database is built using MongoDB which stores the user's account information such as emails and passwords. The Third-party integrations consists of the OpenWeatherMapAPI and clerk for email verification and sign up/sign in. The Infrastructure consists of using Docker for the development of the application. We used the facade pattern, adapter pattern and singleton pattern for the backend of the application, particularly the API. Our plans for building the application and what was built, match.
+4. As we used react, the front-end components were designed to be reusable. The API endpoints in the back-end are modular which separates concerns.
+5. We need to implement the feature of saving locations as the user's favorites.
+### CI/CD
+1. For our project, we utilized unit testing with Jest and React Testing Library to validate the functionality of individual React components. These tests helped ensure that each component behaved as expected. To automate our testing process, we integrated these tests into our CI/CD pipeline using GitHub Actions. This allowed tests to run automatically on every commit or pull request, ensuring continuous code quality and catching potential issues early.
+2. Our branching workflow worked well for the team. However there were moments where we accidentally merged to the main branch instead of the development branch. We believe we were successful in properly reviewing the code before merging as a team since we tested the code every time before merging. 
+3. Our project is fully Dockerized, which simplifies deployment and ensures consistency across environments. We created Docker images for all services, including the React frontend and backend, and used Docker Compose to manage and run these services together during development and testing. The deployment process involves building the Docker images using docker build and testing them locally with docker-compose up. Once verified, we push these images to a container registry to GitHub Container Registry. Our CI/CD pipeline also automates parts of the deployment process, ensuring that new updates are seamlessly integrated and deployed after passing all tests. This setup streamlines our workflow and minimizes potential downtime during releases.
+### Reflections
+1. Our project management was a little hectic as each of us were often caught up with other course assignments and midterms. The hardest thing was planning out the development and actually coding the application. Next time we would have to sit down and thoroughly research and plan how we're going to build the project.
+2. Yes our initial requirements were sufficiently detailed for the project; we planned out our features and what third party applications to use for the development. However, we missed a feature of saving favorite locations.
+3. We didn't miss anything in our initial planning. We planned out the features we would work on and how we would develop them. We also planned out which tasks each team member would take on. 
+4. We used the Scrum method, which allowed us to take on particular tasks in sprints. It worked out well as we would always finish our tasks in time. 
+5. No, we all used VScode as our IDEs. We wouldn't change anything in regard to the uniformity of development environments, in the future as we all found working with VSCode easy for this project.
+6.  If we were to estimate the efforts required for this project again, we would consider several key factors that became evident during the development process. We underestimated certain parts of the project. We underestimated the complexity of the features. Integrating the front-end, back-end, database and docker were more complex and time-consuming than anticipated. In the future we would allocate more time for researching and implementing these interconnected components. The team also faced a learning curve with some of the tools and technologies such as docker, CI/CD pipeline, react and the API. In the future, we would also factor in time for learning and adapting to new tools. 
+7. Our team had multiple moments where we were proud but, in particular, we struggled with the login/signup feature and we also had a problem with the weatherAPI key early in the development. However, when we got it working and fixed the errors, it was a great moment where we celebrated our working code. We learned how to fix the code and learned how to deal with similar problems for the future.
+8. AI impacted the efficiency and the speed of the project. There were moments where we were stuck and had to depend on chatGPT which worked out really well and helped fasten our process. 
+
+### Video
+https://youtu.be/wSLgbaDQuJw

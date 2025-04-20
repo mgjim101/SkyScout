@@ -1,0 +1,77 @@
+.navbar{
+    display: flex; /* Use flex for proper alignment */
+  padding: 5px;
+  justify-content: space-between; /* Distribute elements evenly */
+  align-items: center; /* Align items vertically */
+}
+.logo{
+    color: #08BDBD;
+    font-family: Montserrat;
+    font-size: 32px;
+    
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+.searchBar{
+    border-radius: 7px;
+    border: 1.5px solid #2364AA;
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px;
+    width: 516px; 
+    height: 10px;
+}
+  
+  .search-input {
+    border: none; 
+    outline: none; 
+    font-size: 15px; 
+    flex: 1; 
+    color: #3063A5; 
+    background-color: transparent; 
+    padding-left: 5px;
+  }
+  .search-input::placeholder {
+    color: #2364AA;
+    font-size: 15px;
+  }
+
+  
+  .search-button {
+    background: none; 
+    border: none; 
+    margin-left: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .search-icon {
+    width: 18px; 
+    height: 18px;
+  }
+  .right-section {
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Center vertically */
+    gap: 20px; /* Space between bell and user icons */
+  }
+  
+  /* Bell icon */
+  .bell-icon {
+    width: 29px; /* Adjust size as needed */
+    height: 29px;
+    cursor: pointer; /* Makes the icon clickable */
+  }
+  
+  /* User icon */
+  .user-icon {
+    width: 32px; /* Consistent size for user profile */
+    height: 32px;
+    border-radius: 50%; /* Optional: Makes it circular */
+    cursor: pointer; /* Pointer cursor for interactivity */
+  }
+
+  
+  .
+
